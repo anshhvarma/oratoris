@@ -146,7 +146,7 @@ export default function LoginPage() {
 
           <div className="flex flex-col space-y-2 text-center text-sm">
             <Link 
-              href="/forgot-password" 
+              href="/" 
               className="text-blue-500 hover:text-blue-600"
             >
               Forgot your password?

@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6">
           <div className="text-center sm:text-left text-muted-foreground order-2 sm:order-1">
-            Developed with ❤ By <Link href='/members' className='underline'>TEAM KIS</Link>
+            Developed with ❤ By <Link href='/' className='underline'>TEAM KIS</Link>
           </div>
           
           <div className="flex space-x-4 order-1 sm:order-2">
