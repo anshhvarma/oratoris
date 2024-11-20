@@ -2,6 +2,42 @@
 import React from 'react';
 import heroImg from "@/assests/heroImg.png"
 import Image from 'next/image';
+import AnimatedTestimonials from '@/app/components/ui/testimonials'
+import img1 from '@/assests/speakers/speaker1.jpeg'
+import img2 from '@/assests/speakers/speaker2.jpeg'
+import img4 from '@/assests/speakers/speaker4.jpeg'
+import img5 from '@/assests/speakers/speaker5.jpeg'
+
+const testimonials = [
+  {
+    quote:
+      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+    name: "Sarah Chen",
+    designation: "Product Manager at TechFlow",
+    src: img1
+  },
+    {
+    quote:
+      "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+    name: "Michael Rodriguez",
+    designation: "CTO at InnovateSphere",
+    src:img2
+  },
+  {
+    quote:
+      "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+    name: "Lisa Thompson",
+    designation: "VP of Technology at FutureNet",
+    src:img5
+  },
+  {
+    quote:
+      "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+    name: "James Kim",
+    designation: "Engineering Lead at DataPro",
+    src: img4
+  }
+];
 
 const Home = () => {
   return (
@@ -63,8 +99,11 @@ const Home = () => {
           </div>
         </section>
       </div>
+      <AnimatedTestimonials testimonials={testimonials} />;
     </section>
   );
 };
 
 export default Home;
+
+
