@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, {useState} from "react";
 import {toast} from "react-hot-toast";
 import {useRouter} from "next/navigation";
-import {Button} from '../../components/ui/button'
+import {Button} from '../components/ui/button'
 
 
 export default function ProfilePage() {

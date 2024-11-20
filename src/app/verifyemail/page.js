@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
 import { CheckCircle, XCircle, Loader2, Mail, RefreshCcw } from "lucide-react";
-import { Alert, AlertDescription, AlertTitle } from  "@/components/ui/alert";
+import { Alert, AlertDescription, AlertTitle } from  "../components/ui/alert";
 
 export default function VerifyEmailPage() {
   const [token, setToken] = useState("");
