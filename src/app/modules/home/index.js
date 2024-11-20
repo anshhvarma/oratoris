@@ -46,90 +46,91 @@ const testimonials = [
 const Home = () => {
   return (
     <section>
-      <div className="bg-white">
-        <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-              <div>
-                <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
-                  Connect & learn from the experts
-                </h1>
-                <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
-                  Grow your career fast with the right mentor.
-                </p>
+      <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+            <div>
+              <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
+                Connect & learn from the experts
+              </h1>
+              <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
+                Grow your career fast with the right mentor.
+              </p>
 
-                <a
-                  href="/signup"
-                  title=""
-                  className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
-                  role="button"
+              <a
+                href="/signup"
+                title=""
+                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                role="button"
+              >
+                Join for free
+                <svg
+                  className="w-6 h-6 ml-8 -mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  Join for free
-                  <svg
-                    className="w-6 h-6 ml-8 -mr-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </a>
+
+              <p className="mt-5 text-gray-600">
+                Already joined us?{' '}
+                <a href="/login" title="" className="text-black transition-all duration-200 hover:underline">
+                  Log in
                 </a>
+              </p>
+            </div>
 
-                <p className="mt-5 text-gray-600">
-                  Already joined us?{' '}
-                  <a href="/login" title="" className="text-black transition-all duration-200 hover:underline">
-                    Log in
-                  </a>
-                </p>
-              </div>
-
-              <div>
-                <Image
-                  width="100%"
-                  height="100%"
-                  src={heroImg}
-                  alt="Image"
-                />
-              </div>
+            <div>
+              <Image
+                width="100%"
+                height="100%"
+                src={heroImg}
+                alt="Image"
+              />
             </div>
           </div>
-          <div className="flex flex-1 items-center justify-center pt-24">
+        </div>
+      </section>
+      <div className='bg-white flex justify-evenly rounded-lg p-4'>
+        <div className="flex items-center">
+          <School size={32} className='mr-4' />
+          <div>
+            <p className="font-medium">24+</p>
+            <p className="text-gray-500">Colleges</p>
           </div>
-        </section>
+        </div>
+
+        <div className="flex items-center">
+          <UserCircle size={32} className="mr-4" />
+          <div>
+            <p className="font-medium">450+</p>
+            <p className="text-gray-500">Speakers</p>
+          </div>
+        </div>
+
+        <div className="flex items-center">
+          <GraduationCapIcon size={32} className="mr-4" />
+          <div>
+            <p className="font-medium">70,000+</p>
+            <p className="text-gray-500">Attendees</p>
+          </div>
+        </div>
       </div>
-      <div className='bg-white flex justify-evenly rounded-lg  p-4'>
-  <div className="flex items-center">
-    <School size={32} className='mr-4' />
-    <div>
-      <p className="font-medium">24+</p>
-      <p className="text-gray-500">Colleges</p>
-    </div>
-  </div>
-  
-  <div className="flex items-center">
-    <UserCircle size={32} className="mr-4" />
-    <div>
-      <p className="font-medium">450+</p>
-      <p className="text-gray-500">Speakers</p>
-    </div>
-  </div>
-
-  <div className="flex items-center">
-    <GraduationCapIcon size={32} className="mr-4" />
-    <div>
-      <p className="font-medium">70,000+</p>
-      <p className="text-gray-500">Attendees</p>
-    </div>
-  </div>
-</div>
-
+      <div>
+        <h1 className='text-center text-5xl mx-32 pt-10 '>
+          A seamless connection between colleges, students, and speakers to inspire innovation through events and workshops.
+        </h1>
+      </div>
       <AnimatedTestimonials testimonials={testimonials} />;
+
     </section>
   );
 };
