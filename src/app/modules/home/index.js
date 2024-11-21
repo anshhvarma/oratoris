@@ -8,6 +8,7 @@ import img2 from '@/assests/speakers/speaker2.jpeg'
 import img4 from '@/assests/speakers/speaker4.jpeg'
 import img5 from '@/assests/speakers/speaker5.jpeg'
 import { Building, GraduationCap, GraduationCapIcon, School, UserCircle } from 'lucide-react';
+import { AppleCardsCarouselDemo } from './universities';
 
 
 
@@ -125,11 +126,11 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <h1 className='text-center text-5xl mx-32 pt-10 '>
-          A seamless connection between colleges, students, and speakers to inspire innovation through events and workshops.
-        </h1>
+        <h1 className='text-center text-5xl mx-32 pt-10 font-bold'>
+        Uniting Campuses and Visionaries to Ignite Innovation and Learning.        </h1>
       </div>
       <AnimatedTestimonials testimonials={testimonials} />;
+      <AppleCardsCarouselDemo />
 
     </section>
   );
