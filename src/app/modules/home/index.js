@@ -10,7 +10,7 @@ import img5 from '@/assests/speakers/speaker5.jpeg';
 import { Building, GraduationCapIcon, School, UserCircle } from 'lucide-react';
 import { AppleCardsCarouselDemo } from './universities';
 import { AnimatedModalDemo } from './schedule';
-
+import { StickyScrollRevealDemo } from './features';
 
 const testimonials = [
   {
@@ -138,6 +138,7 @@ const Home = () => {
 
       <AnimatedTestimonials testimonials={testimonials} />
       <AppleCardsCarouselDemo />
+      <StickyScrollRevealDemo />
     </section>
   );
 };
