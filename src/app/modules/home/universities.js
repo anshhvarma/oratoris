@@ -3,9 +3,9 @@ import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/app/components/ui/cardcarousel";
 import Img1 from '@/assests/universites/university1.jpg'
-import Img2 from '@/assests/universites/univ2.jpeg'
-import Img3 from '@/assests/universites/univ3.jpeg'
-import Img4 from '@/assests/universites/univ4.jpeg'
+import Img2 from '@/assests/universites/university2.jpg'
+import Img3 from '@/assests/universites/university3.jpeg'
+import Img4 from '@/assests/universites/university4.jpeg'
 import Img5 from '@/assests/universites/univ5.jpeg'
 
 export function AppleCardsCarouselDemo() {

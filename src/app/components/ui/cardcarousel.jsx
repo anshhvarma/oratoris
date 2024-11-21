@@ -19,7 +19,6 @@ export const CarouselContext = createContext({
   onCardClose: () => {},
   currentIndex: 0,
 });
-import Img1 from '@/assests/universites/univ1.jpeg'
 
 
 export const Carousel = ({
