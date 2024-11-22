@@ -73,7 +73,7 @@ export function StickyScrollReveal() {
   return (
     (<div className="p-10">
       <h2
-        className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans text-center">
+        className="text-center text-4xl sm:text-xl lg:text-5xl lg:mx-32 font-bold">
         Features.
       </h2>
       <StickyScroll content={content} />

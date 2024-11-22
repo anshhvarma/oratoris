@@ -48,31 +48,31 @@ const Home = () => {
     <section>
       <HeroComponent />
       <section className='bg-[#FCF8F1] bg-opacity-30'>
-        <div className=" flex justify-evenly rounded-lg mx-48 border-t pt-6">
-          <div className="flex items-center">
-            <School size={40} className="mr-4" />
-            <div>
-              <p className="font-medium">24+</p>
-              <p className="text-gray-500">Colleges</p>
-            </div>
-          </div>
-
-          <div className="flex items-center">
-            <UserCircle size={40} className="mr-4" />
-            <div>
-              <p className="font-medium">450+</p>
-              <p className="text-gray-500">Speakers</p>
-            </div>
-          </div>
-
-          <div className="flex items-center">
-            <GraduationCapIcon size={40} className="mr-4" />
-            <div>
-              <p className="font-medium">70,000+</p>
-              <p className="text-gray-500">Attendees</p>
-            </div>
-          </div>
+      <div className="flex flex-col sm:flex-row justify-evenly rounded-lg mx-4 sm:mx-48 border-t pt-6 gap-6 sm:gap-0">
+      <div className="flex items-center justify-center">
+        <School size={40} className="mr-4" />
+        <div>
+          <p className="font-medium">24+</p>
+          <p className="text-gray-500">Colleges</p>
         </div>
+      </div>
+
+      <div className="flex items-center justify-center">
+        <UserCircle size={40} className="mr-4" />
+        <div>
+          <p className="font-medium">450+</p>
+          <p className="text-gray-500">Speakers</p>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center">
+        <GraduationCapIcon size={40} className="mr-4" />
+        <div>
+          <p className="font-medium">70,000+</p>
+          <p className="text-gray-500">Attendees</p>
+        </div>
+      </div>
+    </div>
 
         <div>
           <h1 className="text-center text-5xl lg:mx-32 pt-20 font-bold">
@@ -87,18 +87,16 @@ const Home = () => {
         <CardsCarousel />
         <div>
           <h2
-            className="max-w-7xl mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans text-start">
+            className="text-start text-4xl sm:text-xl lg:text-5xl lg:mx-32 pt-20 font-bold">
             What <span className='text-yellow-400'> Speaker </span> Says.
           </h2>
           <AnimatedTestimonials testimonials={testimonials} />
         </div>
         <StickyScrollReveal />
         <div className='pt-8'>
-          <h1 className="text-center text-9xl lg:mx-32 pt-20 font-bold">
-            {/* Uniting Campuses and Visionaries to Ignite Innovation and Learning. */}
-            <span className='text-yellow-400'> Ready to schedule? </span>start your journey.
-             
-          </h1>
+        <h1 className="text-center text-4xl sm:text-xl lg:text-9xl lg:mx-32 pt-20 font-bold">
+  <span className="text-yellow-400">Ready to schedule?</span> start your journey.
+</h1>
 
           <AnimatedModal />
         </div>
