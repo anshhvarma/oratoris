@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import heroImg from "@/assests/heroImg.png";
 import Image from 'next/image';
-import { AnimatedModalDemo } from './schedule';
+
 
 function HeroComponent() {
-  // Replace this with your actual authentication logic or state from context
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
 
   return (
-    <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+    <section className=" py-10 sm:pt-16 lg:pt-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
@@ -20,8 +19,6 @@ function HeroComponent() {
             </p>
 
             <div>
-              {!isLoggedIn ? (
-                <>
                   <a
                     href="/signup"
                     title=""
@@ -55,10 +52,6 @@ function HeroComponent() {
                       Log in
                     </a>
                   </p>
-                </>
-              ) : (
-                <AnimatedModalDemo />
-              )}
             </div>
           </div>
 

@@ -1,17 +1,15 @@
 'use client'
-import React, { useState, useEffect } from 'react';
-import heroImg from "@/assests/heroImg.png";
-import Image from 'next/image';
+import React from 'react';
 import AnimatedTestimonials from '@/app/components/ui/testimonials';
 import img1 from '@/assests/speakers/speaker1.jpeg';
 import img2 from '@/assests/speakers/speaker2.jpeg';
 import img4 from '@/assests/speakers/speaker4.jpeg';
 import img5 from '@/assests/speakers/speaker5.jpeg';
-import { Building, GraduationCapIcon, School, UserCircle } from 'lucide-react';
-import { AppleCardsCarouselDemo } from './universities';
-import { AnimatedModalDemo } from './schedule';
-import { StickyScrollRevealDemo } from './features';
+import { GraduationCapIcon, School, UserCircle } from 'lucide-react';
+import { CardsCarousel } from './universities';
+import { StickyScrollReveal } from './features';
 import HeroComponent from './heroComponent';
+import { AnimatedModal } from './schedule';
 
 const testimonials = [
   {
@@ -49,43 +47,62 @@ const Home = () => {
   return (
     <section>
       <HeroComponent />
+      <section className='bg-[#FCF8F1] bg-opacity-30'>
+        <div className=" flex justify-evenly rounded-lg mx-48 border-t pt-6">
+          <div className="flex items-center">
+            <School size={40} className="mr-4" />
+            <div>
+              <p className="font-medium">24+</p>
+              <p className="text-gray-500">Colleges</p>
+            </div>
+          </div>
 
+          <div className="flex items-center">
+            <UserCircle size={40} className="mr-4" />
+            <div>
+              <p className="font-medium">450+</p>
+              <p className="text-gray-500">Speakers</p>
+            </div>
+          </div>
 
-      <div className="bg-white flex justify-evenly rounded-lg p-4">
-        <div className="flex items-center">
-          <School size={32} className="mr-4" />
-          <div>
-            <p className="font-medium">24+</p>
-            <p className="text-gray-500">Colleges</p>
+          <div className="flex items-center">
+            <GraduationCapIcon size={40} className="mr-4" />
+            <div>
+              <p className="font-medium">70,000+</p>
+              <p className="text-gray-500">Attendees</p>
+            </div>
           </div>
         </div>
 
-        <div className="flex items-center">
-          <UserCircle size={32} className="mr-4" />
-          <div>
-            <p className="font-medium">450+</p>
-            <p className="text-gray-500">Speakers</p>
-          </div>
+        <div>
+          <h1 className="text-center text-5xl lg:mx-32 pt-20 font-bold">
+            {/* Uniting Campuses and Visionaries to Ignite Innovation and Learning. */}
+            <span className='text-yellow-400'> Not just </span>a College, but a Vibe
+          </h1>
+
+          <p className='text-center text-xl pt-2'>
+            Discover A place where Education feels like an Adventure.        </p>
         </div>
 
-        <div className="flex items-center">
-          <GraduationCapIcon size={32} className="mr-4" />
-          <div>
-            <p className="font-medium">70,000+</p>
-            <p className="text-gray-500">Attendees</p>
-          </div>
+        <CardsCarousel />
+        <div>
+          <h2
+            className="max-w-7xl mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans text-start">
+            What <span className='text-yellow-400'> Speaker </span> Says.
+          </h2>
+          <AnimatedTestimonials testimonials={testimonials} />
         </div>
-      </div>
+        <StickyScrollReveal />
+        <div className='pt-8'>
+          <h1 className="text-center text-9xl lg:mx-32 pt-20 font-bold">
+            {/* Uniting Campuses and Visionaries to Ignite Innovation and Learning. */}
+            <span className='text-yellow-400'> Ready to schedule? </span>start your journey.
+             
+          </h1>
 
-      <div>
-        <h1 className="text-center text-5xl mx-32 pt-10 font-bold">
-          Uniting Campuses and Visionaries to Ignite Innovation and Learning.
-        </h1>
-      </div>
-      
-      <AnimatedTestimonials testimonials={testimonials} />
-      <AppleCardsCarouselDemo />
-      <StickyScrollRevealDemo />
+          <AnimatedModal />
+        </div>
+      </section>
     </section>
   );
 };

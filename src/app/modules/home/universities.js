@@ -8,17 +8,17 @@ import Img3 from '@/assests/universites/university3.jpeg'
 import Img4 from '@/assests/universites/university4.jpeg'
 import Img5 from '@/assests/universites/univ5.jpeg'
 
-export function AppleCardsCarouselDemo() {
+export function CardsCarousel() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
     (<div className="w-full h-full py-20">
-      <h2
+      {/* <h2
         className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         Create your University.
-      </h2>
+      </h2> */}
       <Carousel items={cards} />
     </div>)
   );

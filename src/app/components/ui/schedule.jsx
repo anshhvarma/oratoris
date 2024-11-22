@@ -31,22 +31,24 @@ export function Modal({
   return <ModalProvider>{children}</ModalProvider>;
 }
 
-export const ModalTrigger = ({
-  children,
-  className
-}) => {
+export const ModalTrigger = ({ children, className }) => {
   const { setOpen } = useModal();
   return (
-    (<button
+    <button
       className={cn(
-        "px-4 py-2 rounded-md text-black dark:text-white text-center relative overflow-hidden",
+        "px-8 py-2 border border-black bg-transparent text-black dark:border-white relative group transition duration-200",
         className
       )}
-      onClick={() => setOpen(true)}>
-      {children}
-    </button>)
+      onClick={() => setOpen(true)}
+    >
+      <div className="absolute -bottom-2 -right-2 bg-yellow-300 h-full w-full -z-10 group-hover:bottom-0 group-hover:right-0 transition-all duration-200" />
+      <span className="relative">
+        {children}
+      </span>
+    </button>
   );
 };
+
 
 export const ModalBody = ({
   children,

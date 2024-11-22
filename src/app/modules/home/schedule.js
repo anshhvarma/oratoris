@@ -16,23 +16,21 @@ import img4 from '@/assests/suggestion/suggestion4.jpeg'
 import img5 from '@/assests/suggestion/suggestion5.jpeg'
 import { Mic, PersonStanding, School } from "lucide-react";
 
-export function AnimatedModalDemo() {
+
+export function AnimatedModal() {
   const images = [
     img1,img2,img3,img4,img5
   ];
+  
   return (
-    (<div className="flex items-center justify-center">
+    (<div className="flex items-center justify-center pt-7">
       <Modal>
         <ModalTrigger
-          className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+          className="border rounder-lg h- dark:text-black text-black flex justify-center group/modal-btn">
           <span
             className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
             Schedule Seminar
           </span>
-          <div
-            className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
-            <Mic />
-          </div>
         </ModalTrigger>
         <ModalBody>
           <ModalContent>

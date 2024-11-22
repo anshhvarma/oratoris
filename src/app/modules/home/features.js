@@ -69,9 +69,13 @@ const content = [
     ),
   }
 ];
-export function StickyScrollRevealDemo() {
+export function StickyScrollReveal() {
   return (
     (<div className="p-10">
+      <h2
+        className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans text-center">
+        Features.
+      </h2>
       <StickyScroll content={content} />
     </div>)
   );
