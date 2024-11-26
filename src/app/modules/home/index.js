@@ -10,6 +10,7 @@ import { CardsCarousel } from './universities';
 import { StickyScrollReveal } from './features';
 import HeroComponent from './heroComponent';
 import { AnimatedModal } from './schedule';
+import HeroVideo from '@/app/components/ui/HeroVideo';
 
 const testimonials = [
   {
@@ -73,6 +74,27 @@ const Home = () => {
         </div>
       </div>
     </div>
+
+
+
+
+    <div className="flex flex-1 justify-center items-center pt-11">
+      <HeroVideo
+        className="dark:hidden block"
+        animationStyle="from-center"
+        videoSrc="https://www.youtube.com/embed/"
+        thumbnailSrc=""
+        thumbnailAlt="Hero Video"
+      />
+      <HeroVideo
+        className="hidden dark:block"
+        animationStyle="from-center"
+        videoSrc="https://www.youtube.com/embed/"
+        thumbnailSrc=""
+        thumbnailAlt="Hero Video"
+      />
+    </div>
+
 
         <div>
           <h1 className="text-center text-5xl lg:mx-32 pt-20 font-bold">
