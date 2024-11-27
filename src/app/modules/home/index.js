@@ -109,7 +109,7 @@ const Home = () => {
         <CardsCarousel />
         <div>
           <h2
-            className="text-start text-4xl sm:text-xl lg:text-5xl lg:mx-32 pt-20 font-bold">
+            className="text-start text-4xl sm:text-xl lg:text-5xl lg:mx-32 font-bold">
             What <span className='text-yellow-400'> Speaker </span> Says.
           </h2>
           <AnimatedTestimonials testimonials={testimonials} />
