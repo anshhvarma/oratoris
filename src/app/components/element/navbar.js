@@ -15,7 +15,7 @@ const Navigation = () => {
     const navLinks = [
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
-        { href: '/upcomingEvents', label: 'upcomingEvents' },
+        { href: '/events', label: 'Events' },
         { href: '/profile', label: 'Profile' }
     ];
 

@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-import User from "../models/userModel";
+import User from "../models/UserModel";
 import bcryptjs from 'bcryptjs';
 
 
